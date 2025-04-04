@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -96,6 +99,12 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-finfluent-mint text-foreground font-nunito;
+  }
+}
+
+@layer components {
+  .financial-topic {
+    @apply flex flex-col items-center justify-center p-3 rounded-lg transition-all duration-300 hover:bg-white/30 cursor-pointer;
   }
 }

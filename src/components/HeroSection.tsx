@@ -1,0 +1,51 @@
+
+import React from 'react';
+import { Button } from '@/components/ui/button';
+import { PiggyBank, Leaf, Acorn } from 'lucide-react';
+
+const HeroSection = () => {
+  return (
+    <section className="container mx-auto py-6 md:py-16 px-4 flex flex-col lg:flex-row items-center justify-between gap-12">
+      {/* Mascot and Floating Elements */}
+      <div className="relative w-full lg:w-1/2 flex justify-center lg:justify-end">
+        <div className="relative">
+          {/* Squirrel Mascot */}
+          <div className="w-60 h-60 md:w-80 md:h-80 bg-white/30 rounded-full flex items-center justify-center">
+            <div className="text-7xl md:text-8xl">🐿️</div>
+          </div>
+          
+          {/* Floating Elements */}
+          <div className="absolute top-0 right-0 animate-float">
+            <PiggyBank className="w-12 h-12 text-finfluent-orange" />
+          </div>
+          <div className="absolute bottom-12 left-0 animate-float" style={{ animationDelay: '0.5s' }}>
+            <Leaf className="w-10 h-10 text-green-500" />
+          </div>
+          <div className="absolute bottom-0 right-12 animate-float" style={{ animationDelay: '1s' }}>
+            <Acorn className="w-10 h-10 text-finfluent-brown" />
+          </div>
+        </div>
+      </div>
+      
+      {/* Text and CTA */}
+      <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start gap-6 text-center lg:text-left">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-800">
+          The Fun, Interactive and Smart Way to Learn Financial Skills
+        </h2>
+        <p className="text-lg text-gray-600 max-w-lg">
+          Join Fin the Squirrel on a journey to financial wisdom through gamified learning, challenges, and real-world financial simulations.
+        </p>
+        <div className="bg-finfluent-brown p-1 rounded-full">
+          <Button 
+            size="lg" 
+            className="text-white bg-finfluent-purple hover:bg-finfluent-purple/90 rounded-full px-8 py-6 text-lg"
+          >
+            Join the Waitlist!
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
