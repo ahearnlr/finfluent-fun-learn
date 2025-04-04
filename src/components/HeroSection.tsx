@@ -14,7 +14,7 @@ const HeroSection = () => {
             <img 
               src="/lovable-uploads/975cda0b-5035-4cbb-a4fa-a689d06b3ac4.png" 
               alt="Fin the Squirrel" 
-              className="w-48 md:w-64 object-contain"
+              className="w-48 md:w-64 object-contain mix-blend-multiply"
             />
           </div>
           
