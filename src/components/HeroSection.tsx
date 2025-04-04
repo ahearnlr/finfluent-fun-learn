@@ -11,7 +11,11 @@ const HeroSection = () => {
         <div className="relative">
           {/* Squirrel Mascot */}
           <div className="w-60 h-60 md:w-80 md:h-80 bg-white/30 rounded-full flex items-center justify-center">
-            <div className="text-7xl md:text-8xl">🐿️</div>
+            <img 
+              src="/lovable-uploads/975cda0b-5035-4cbb-a4fa-a689d06b3ac4.png" 
+              alt="Fin the Squirrel" 
+              className="w-48 md:w-64 object-contain"
+            />
           </div>
           
           {/* Floating Elements */}
