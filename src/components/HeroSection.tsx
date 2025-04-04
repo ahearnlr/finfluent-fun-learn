@@ -1,7 +1,6 @@
-
 import React from 'react';
-import { Button } from '@/components/ui/button';
 import { PiggyBank, Leaf, Coins } from 'lucide-react';
+import WaitlistForm from './WaitlistForm';
 
 const HeroSection = () => {
   return (
@@ -40,12 +39,7 @@ const HeroSection = () => {
           Join Fin the Squirrel on a journey to financial wisdom through gamified learning, challenges, and real-world financial simulations.
         </p>
         <div className="bg-finfluent-brown p-1 rounded-full">
-          <Button 
-            size="lg" 
-            className="text-white bg-finfluent-purple hover:bg-finfluent-purple/90 rounded-full px-8 py-6 text-lg"
-          >
-            Join the Waitlist!
-          </Button>
+          <WaitlistForm buttonClassName="text-white bg-finfluent-purple hover:bg-finfluent-purple/90 rounded-full px-8 py-6 text-lg" />
         </div>
       </div>
     </section>
