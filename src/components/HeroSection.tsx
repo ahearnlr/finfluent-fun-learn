@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { PiggyBank, Leaf, Acorn } from 'lucide-react';
+import { PiggyBank, Leaf, Coins } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -22,7 +22,7 @@ const HeroSection = () => {
             <Leaf className="w-10 h-10 text-green-500" />
           </div>
           <div className="absolute bottom-0 right-12 animate-float" style={{ animationDelay: '1s' }}>
-            <Acorn className="w-10 h-10 text-finfluent-brown" />
+            <Coins className="w-10 h-10 text-finfluent-brown" />
           </div>
         </div>
       </div>
