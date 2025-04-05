@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { GlobeIcon, LogInIcon } from 'lucide-react';
+import { GlobeIcon } from 'lucide-react';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 
 const Header = () => {
@@ -30,14 +29,6 @@ const Header = () => {
             <DropdownMenuItem>Deutsch</DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
-        
-        <Button 
-          variant="outline" 
-          className="flex items-center gap-2 border-finfluent-brown text-finfluent-brown hover:bg-finfluent-brown/10"
-        >
-          <LogInIcon size={18} />
-          <span>Login</span>
-        </Button>
       </div>
     </header>
   );

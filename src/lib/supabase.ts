@@ -1,9 +1,12 @@
 import { createClient } from '@supabase/supabase-js';
 
-// Use environment variables for Supabase credentials
-// You'll need to add these to your environment or .env file
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
-const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+// Mock implementation for development without Supabase
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || 'https://example.com';
+const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY || 'dummy_key';
 
-// Create a single supabase client for interacting with your database
-export const supabase = createClient(supabaseUrl, supabaseKey); 
+// Create client with mocked behavior
+export const supabase = createClient(supabaseUrl, supabaseKey, {
+  auth: {
+    persistSession: false
+  }
+}); 
