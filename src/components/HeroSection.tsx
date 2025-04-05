@@ -1,8 +1,11 @@
 import React from 'react';
 import { PiggyBank, Leaf, Coins } from 'lucide-react';
 import WaitlistForm from './WaitlistForm';
+import { useTranslation } from 'react-i18next';
 
 const HeroSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="container mx-auto py-6 md:py-16 px-4 flex flex-col lg:flex-row items-center justify-between gap-12">
       {/* Mascot and Floating Elements */}
@@ -33,10 +36,10 @@ const HeroSection = () => {
       {/* Text and CTA */}
       <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start gap-6 text-center lg:text-left">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-800">
-          The Fun, Interactive and Smart Way to Learn Financial Skills
+          {t('hero.title')}
         </h2>
         <p className="text-lg text-gray-600 max-w-lg">
-          Join Fin the Squirrel on a journey to financial wisdom through gamified learning, challenges, and real-world financial simulations.
+          {t('hero.description')}
         </p>
         <div className="bg-finfluent-brown p-1 rounded-full">
           <WaitlistForm buttonClassName="text-white bg-finfluent-purple hover:bg-finfluent-purple/90 rounded-full px-8 py-6 text-lg" />

@@ -1,0 +1,53 @@
+{
+  "header": {
+    "language": "网站语言：",
+    "languages": {
+      "english": "English",
+      "spanish": "Español",
+      "french": "Français",
+      "german": "Deutsch",
+      "chinese": "中文"
+    }
+  },
+  "hero": {
+    "title": "学习金融技能的趣味、互动和智能方式",
+    "description": "加入小松鼠Fin的旅程，通过游戏化学习、挑战和真实世界的金融模拟，获得金融智慧。",
+    "waitlist": {
+      "button": "加入等待名单！",
+      "title": "加入Finfluent等待名单",
+      "description": "成为第一个知道我们应用发布的人！填写下面的表格加入等待名单。",
+      "form": {
+        "name": "姓名",
+        "namePlaceholder": "输入您的姓名",
+        "email": "电子邮箱",
+        "emailPlaceholder": "输入您的电子邮箱",
+        "howHeard": "您是如何听说我们的？",
+        "howHeardPlaceholder": "可选",
+        "submit": "提交",
+        "submitting": "提交中..."
+      },
+      "success": {
+        "title": "您已加入名单！",
+        "description": "感谢您加入我们的等待名单。我们会随时通知您最新消息！"
+      },
+      "error": {
+        "title": "出现错误",
+        "description": "无法将您添加到等待名单。请重试。"
+      }
+    }
+  },
+  "financialTopics": {
+    "title": "探索金融主题",
+    "topics": {
+      "cash": "现金",
+      "taxes": "税收",
+      "assets": "资产",
+      "liabilities": "负债",
+      "retirement": "退休",
+      "investing": "投资",
+      "housing": "住房",
+      "credit": "信贷",
+      "more": "更多"
+    }
+  }
+} 

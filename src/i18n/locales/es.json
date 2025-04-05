@@ -1,0 +1,53 @@
+{
+  "header": {
+    "language": "Idioma del sitio: ",
+    "languages": {
+      "english": "English",
+      "spanish": "Español",
+      "french": "Français",
+      "german": "Deutsch",
+      "chinese": "中文"
+    }
+  },
+  "hero": {
+    "title": "La Forma Divertida, Interactiva e Inteligente de Aprender Habilidades Financieras",
+    "description": "Únete a Fin la Ardilla en un viaje hacia la sabiduría financiera a través del aprendizaje gamificado, desafíos y simulaciones financieras del mundo real.",
+    "waitlist": {
+      "button": "¡Únete a la Lista de Espera!",
+      "title": "Únete a la Lista de Espera de Finfluent",
+      "description": "¡Sé el primero en saber cuándo se lanza nuestra aplicación! Completa el formulario a continuación para unirte a la lista de espera.",
+      "form": {
+        "name": "Nombre",
+        "namePlaceholder": "Ingresa tu nombre",
+        "email": "Correo electrónico",
+        "emailPlaceholder": "Ingresa tu correo electrónico",
+        "howHeard": "¿Cómo te enteraste de nosotros?",
+        "howHeardPlaceholder": "Opcional",
+        "submit": "Enviar",
+        "submitting": "Enviando..."
+      },
+      "success": {
+        "title": "¡Estás en la lista!",
+        "description": "Gracias por unirte a nuestra lista de espera. ¡Te mantendremos informado!"
+      },
+      "error": {
+        "title": "Algo salió mal",
+        "description": "No pudimos agregarte a la lista de espera. Por favor, inténtalo de nuevo."
+      }
+    }
+  },
+  "financialTopics": {
+    "title": "Explora Temas Financieros",
+    "topics": {
+      "cash": "Efectivo",
+      "taxes": "Impuestos",
+      "assets": "Activos",
+      "liabilities": "Pasivos",
+      "retirement": "Jubilación",
+      "investing": "Inversiones",
+      "housing": "Vivienda",
+      "credit": "Crédito",
+      "more": "Más"
+    }
+  }
+} 

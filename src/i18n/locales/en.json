@@ -1,0 +1,53 @@
+{
+  "header": {
+    "language": "Site Language: ",
+    "languages": {
+      "english": "English",
+      "spanish": "Español",
+      "french": "Français",
+      "german": "Deutsch",
+      "chinese": "中文"
+    }
+  },
+  "hero": {
+    "title": "The Fun, Interactive and Smart Way to Learn Financial Skills",
+    "description": "Join Fin the Squirrel on a journey to financial wisdom through gamified learning, challenges, and real-world financial simulations.",
+    "waitlist": {
+      "button": "Join the Waitlist!",
+      "title": "Join the Finfluent Waitlist",
+      "description": "Be the first to know when our app launches! Fill out the form below to join the waitlist.",
+      "form": {
+        "name": "Name",
+        "namePlaceholder": "Enter your name",
+        "email": "Email",
+        "emailPlaceholder": "Enter your email",
+        "howHeard": "How did you hear about us?",
+        "howHeardPlaceholder": "Optional",
+        "submit": "Submit",
+        "submitting": "Submitting..."
+      },
+      "success": {
+        "title": "You're on the list!",
+        "description": "Thanks for joining our waitlist. We'll keep you updated!"
+      },
+      "error": {
+        "title": "Something went wrong",
+        "description": "Could not add you to the waitlist. Please try again."
+      }
+    }
+  },
+  "financialTopics": {
+    "title": "Explore Financial Topics",
+    "topics": {
+      "cash": "Cash",
+      "taxes": "Taxes",
+      "assets": "Assets",
+      "liabilities": "Liabilities",
+      "retirement": "Retirement",
+      "investing": "Investing",
+      "housing": "Housing",
+      "credit": "Credit",
+      "more": "More"
+    }
+  }
+} 

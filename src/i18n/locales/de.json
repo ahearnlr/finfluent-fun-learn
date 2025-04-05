@@ -1,0 +1,53 @@
+{
+  "header": {
+    "language": "Website-Sprache: ",
+    "languages": {
+      "english": "English",
+      "spanish": "Español",
+      "french": "Français",
+      "german": "Deutsch",
+      "chinese": "中文"
+    }
+  },
+  "hero": {
+    "title": "Der unterhaltsame, interaktive und intelligente Weg, Finanzkompetenzen zu erlernen",
+    "description": "Begleiten Sie Fin das Eichhörnchen auf einer Reise zur finanziellen Weisheit durch gamifiziertes Lernen, Herausforderungen und realistische Finanzsimulationen.",
+    "waitlist": {
+      "button": "Zur Warteliste hinzufügen!",
+      "title": "Treten Sie der Finfluent-Warteliste bei",
+      "description": "Seien Sie der Erste, der erfährt, wann unsere App startet! Füllen Sie das untenstehende Formular aus, um der Warteliste beizutreten.",
+      "form": {
+        "name": "Name",
+        "namePlaceholder": "Geben Sie Ihren Namen ein",
+        "email": "E-Mail",
+        "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+        "howHeard": "Wie haben Sie von uns erfahren?",
+        "howHeardPlaceholder": "Optional",
+        "submit": "Absenden",
+        "submitting": "Wird gesendet..."
+      },
+      "success": {
+        "title": "Sie sind auf der Liste!",
+        "description": "Vielen Dank, dass Sie unserer Warteliste beigetreten sind. Wir halten Sie auf dem Laufenden!"
+      },
+      "error": {
+        "title": "Etwas ist schiefgelaufen",
+        "description": "Wir konnten Sie nicht zur Warteliste hinzufügen. Bitte versuchen Sie es erneut."
+      }
+    }
+  },
+  "financialTopics": {
+    "title": "Finanzthemen erkunden",
+    "topics": {
+      "cash": "Bargeld",
+      "taxes": "Steuern",
+      "assets": "Vermögenswerte",
+      "liabilities": "Verbindlichkeiten",
+      "retirement": "Rente",
+      "investing": "Investitionen",
+      "housing": "Wohnen",
+      "credit": "Kredit",
+      "more": "Mehr"
+    }
+  }
+} 

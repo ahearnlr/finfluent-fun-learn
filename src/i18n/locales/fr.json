@@ -1,0 +1,53 @@
+{
+  "header": {
+    "language": "Langue du site : ",
+    "languages": {
+      "english": "English",
+      "spanish": "Español",
+      "french": "Français",
+      "german": "Deutsch",
+      "chinese": "中文"
+    }
+  },
+  "hero": {
+    "title": "La Façon Amusante, Interactive et Intelligente d'Apprendre les Compétences Financières",
+    "description": "Rejoignez Fin l'Écureuil dans un voyage vers la sagesse financière à travers l'apprentissage ludique, les défis et les simulations financières du monde réel.",
+    "waitlist": {
+      "button": "Rejoignez la Liste d'Attente !",
+      "title": "Rejoignez la Liste d'Attente Finfluent",
+      "description": "Soyez le premier à savoir quand notre application est lancée ! Remplissez le formulaire ci-dessous pour rejoindre la liste d'attente.",
+      "form": {
+        "name": "Nom",
+        "namePlaceholder": "Entrez votre nom",
+        "email": "Email",
+        "emailPlaceholder": "Entrez votre email",
+        "howHeard": "Comment avez-vous entendu parler de nous ?",
+        "howHeardPlaceholder": "Optionnel",
+        "submit": "Envoyer",
+        "submitting": "Envoi en cours..."
+      },
+      "success": {
+        "title": "Vous êtes sur la liste !",
+        "description": "Merci d'avoir rejoint notre liste d'attente. Nous vous tiendrons informé !"
+      },
+      "error": {
+        "title": "Une erreur est survenue",
+        "description": "Nous n'avons pas pu vous ajouter à la liste d'attente. Veuillez réessayer."
+      }
+    }
+  },
+  "financialTopics": {
+    "title": "Explorez les Sujets Financiers",
+    "topics": {
+      "cash": "Liquidités",
+      "taxes": "Impôts",
+      "assets": "Actifs",
+      "liabilities": "Passifs",
+      "retirement": "Retraite",
+      "investing": "Investissement",
+      "housing": "Logement",
+      "credit": "Crédit",
+      "more": "Plus"
+    }
+  }
+} 
