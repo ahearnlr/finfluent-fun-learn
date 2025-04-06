@@ -63,7 +63,8 @@ const WaitlistForm = ({ buttonClassName, children }: WaitlistFormProps) => {
           { 
             name: data.name, 
             email: data.email, 
-            how_heard: data.howHeard || null 
+            how_heard: data.howHeard || null,
+            joined_at: new Date().toISOString()
           }
         ]);
       

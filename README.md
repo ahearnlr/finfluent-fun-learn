@@ -32,9 +32,33 @@ cd <YOUR_PROJECT_NAME>
 # Step 3: Install the necessary dependencies.
 npm i
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Set up environment variables (see Environment Variables section below)
+
+# Step 5: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
+
+## Environment Variables
+
+This project requires Supabase environment variables to function properly. Follow these steps to set them up:
+
+1. Copy the `.env.example` file to create a new `.env.local` file:
+   ```sh
+   cp .env.example .env.local
+   ```
+
+2. Edit the `.env.local` file and add your Supabase credentials:
+   ```
+   VITE_SUPABASE_URL=your_supabase_url
+   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+   ```
+
+3. For Vercel deployment, add these same environment variables in your Vercel project settings:
+   - Go to your Vercel project dashboard
+   - Navigate to Settings → Environment Variables
+   - Add the same variables you have in your `.env.local` file
+
+Note: The `.env.local` file is gitignored and won't be committed to the repository for security reasons.
 
 **Edit a file directly in GitHub**
 
