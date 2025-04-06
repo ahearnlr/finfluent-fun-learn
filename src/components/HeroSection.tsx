@@ -14,7 +14,7 @@ const HeroSection = () => {
           {/* Squirrel Mascot */}
           <div className="w-60 h-60 md:w-80 md:h-80 bg-finfluent-mint rounded-full flex items-center justify-center">
             <img 
-              src="/lovable-uploads/975cda0b-5035-4cbb-a4fa-a689d06b3ac4.png" 
+              src="/assets/fin.png" 
               alt="Fin the Squirrel" 
               className="w-48 md:w-64 object-contain mix-blend-multiply"
             />

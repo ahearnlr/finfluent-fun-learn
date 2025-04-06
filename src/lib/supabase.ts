@@ -1,12 +1,11 @@
 import { createClient } from '@supabase/supabase-js';
 
-// Mock implementation for development without Supabase
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || 'https://example.com';
-const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY || 'dummy_key';
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
 
-// Create client with mocked behavior
-export const supabase = createClient(supabaseUrl, supabaseKey, {
-  auth: {
-    persistSession: false
-  }
-}); 
+// Validate environment variables are set in production
+if (import.meta.env.PROD && (!supabaseUrl || !supabaseKey)) {
+  console.error('Missing Supabase credentials in production environment');
+}
+
+export const supabase = createClient(supabaseUrl, supabaseKey);

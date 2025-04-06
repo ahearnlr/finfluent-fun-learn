@@ -56,8 +56,18 @@ const WaitlistForm = ({ buttonClassName, children }: WaitlistFormProps) => {
   const onSubmit = async (data: FormValues) => {
     setIsSubmitting(true);
     try {
-      // For development without Supabase, just show success message
-      console.log('Form data:', data);
+      // Insert data into Supabase waitlist table
+      const { error } = await supabase
+        .from('waitlist')
+        .insert([
+          { 
+            name: data.name, 
+            email: data.email, 
+            how_heard: data.howHeard || null 
+          }
+        ]);
+      
+      if (error) throw error;
       
       // Show success message
       toast({

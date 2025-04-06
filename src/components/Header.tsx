@@ -32,12 +32,7 @@ const Header = () => {
 
   return (
     <header className="w-full py-4 px-6 md:px-12 lg:px-24 flex justify-between items-center">
-      <div className="logo flex items-center gap-2">
-        <img 
-          src="/assets/fin.png" 
-          alt="Fin the Squirrel" 
-          className="w-10 h-10 object-contain"
-        />
+      <div className="logo">
         <h1 className="text-2xl md:text-3xl font-bold">
           <span className="text-finfluent-teal">Fin</span>
           <span className="text-finfluent-brown">Fluent</span>
