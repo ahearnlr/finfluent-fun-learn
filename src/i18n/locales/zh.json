@@ -21,8 +21,10 @@
         "namePlaceholder": "输入您的姓名",
         "email": "电子邮箱",
         "emailPlaceholder": "输入您的电子邮箱",
+        "phoneNumber": "电话号码",
+        "phoneNumberPlaceholder": "输入您的电话号码",
         "howHeard": "您是如何听说我们的？",
-        "howHeardPlaceholder": "可选",
+        "howHeardPlaceholder": "请选择一个选项",
         "submit": "提交",
         "submitting": "提交中..."
       },

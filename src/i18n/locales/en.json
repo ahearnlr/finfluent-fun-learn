@@ -21,8 +21,10 @@
         "namePlaceholder": "Enter your name",
         "email": "Email",
         "emailPlaceholder": "Enter your email",
+        "phoneNumber": "Phone Number",
+        "phoneNumberPlaceholder": "Enter your phone number",
         "howHeard": "How did you hear about us?",
-        "howHeardPlaceholder": "Optional",
+        "howHeardPlaceholder": "Select an option",
         "submit": "Submit",
         "submitting": "Submitting..."
       },

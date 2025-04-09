@@ -13,6 +13,13 @@ import {
   FormMessage,
 } from '@/components/ui/form';
 import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select';
+import {
   Dialog,
   DialogContent,
   DialogDescription,
@@ -28,7 +35,8 @@ import { useTranslation } from 'react-i18next';
 const formSchema = z.object({
   email: z.string().email({ message: 'Please enter a valid email address' }),
   name: z.string().min(2, { message: 'Name must be at least 2 characters' }),
-  howHeard: z.string().optional(),
+  phoneNumber: z.string().min(10, { message: 'Please enter a valid phone number' }),
+  howHeard: z.enum(['instagram', 'tiktok', 'linkedin', 'x', 'word_of_mouth', 'other']),
 });
 
 type FormValues = z.infer<typeof formSchema>;
@@ -49,7 +57,8 @@ const WaitlistForm = ({ buttonClassName, children }: WaitlistFormProps) => {
     defaultValues: {
       email: '',
       name: '',
-      howHeard: '',
+      phoneNumber: '',
+      howHeard: 'word_of_mouth',
     },
   });
 
@@ -62,8 +71,9 @@ const WaitlistForm = ({ buttonClassName, children }: WaitlistFormProps) => {
         .insert([
           { 
             name: data.name, 
-            email: data.email, 
-            how_heard: data.howHeard || null,
+            email: data.email,
+            phone_number: data.phoneNumber,
+            how_heard: data.howHeard,
             joined_at: new Date().toISOString()
           }
         ]);
@@ -139,13 +149,38 @@ const WaitlistForm = ({ buttonClassName, children }: WaitlistFormProps) => {
             />
             <FormField
               control={form.control}
+              name="phoneNumber"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>{t('hero.waitlist.form.phoneNumber')}</FormLabel>
+                  <FormControl>
+                    <Input placeholder={t('hero.waitlist.form.phoneNumberPlaceholder')} type="tel" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
               name="howHeard"
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>{t('hero.waitlist.form.howHeard')}</FormLabel>
-                  <FormControl>
-                    <Input placeholder={t('hero.waitlist.form.howHeardPlaceholder')} {...field} />
-                  </FormControl>
+                  <Select onValueChange={field.onChange} defaultValue={field.value}>
+                    <FormControl>
+                      <SelectTrigger>
+                        <SelectValue placeholder={t('hero.waitlist.form.howHeardPlaceholder')} />
+                      </SelectTrigger>
+                    </FormControl>
+                    <SelectContent>
+                      <SelectItem value="instagram">Instagram</SelectItem>
+                      <SelectItem value="tiktok">TikTok</SelectItem>
+                      <SelectItem value="linkedin">LinkedIn</SelectItem>
+                      <SelectItem value="x">X (Twitter)</SelectItem>
+                      <SelectItem value="word_of_mouth">Word of Mouth</SelectItem>
+                      <SelectItem value="other">Other</SelectItem>
+                    </SelectContent>
+                  </Select>
                   <FormMessage />
                 </FormItem>
               )}

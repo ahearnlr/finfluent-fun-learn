@@ -21,8 +21,10 @@
         "namePlaceholder": "Geben Sie Ihren Namen ein",
         "email": "E-Mail",
         "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+        "phoneNumber": "Telefonnummer",
+        "phoneNumberPlaceholder": "Geben Sie Ihre Telefonnummer ein",
         "howHeard": "Wie haben Sie von uns erfahren?",
-        "howHeardPlaceholder": "Optional",
+        "howHeardPlaceholder": "Wählen Sie eine Option",
         "submit": "Absenden",
         "submitting": "Wird gesendet..."
       },
