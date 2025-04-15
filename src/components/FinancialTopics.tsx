@@ -62,7 +62,7 @@ const topics = {
   investing: {
     title: 'Investing',
     facts: [
-      '54% can not answer investing questions correctly.',
+      '54% cannot answer investing questions correctly.',
       '65% do not understand risk.',
       'Education gap: College grads: 62% literacy. No high school diploma: 29%.',
     ],
@@ -80,8 +80,8 @@ const topics = {
     facts: [
       '35% of Gen Z could not define APR or credit score impacts.',
       'Only 58% of adults score correctly on debt/borrowing knowledge.',
-      '1 in 4 Americans lacks access to trusted financial guidance.',
-      '23% of adults aged 18–29 have credit card debt overdue by 90+ days.',
+      '1 in 4 Americans lack access to trusted financial guidance.',
+      '23% of adults ages 18–29 have credit card debt overdue by 90+ days.',
     ],
   },
   retirement: {
